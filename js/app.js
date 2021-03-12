@@ -1906,23 +1906,20 @@ let sliderStock = new Swiper('.slider-stock', {
 let goodtoknowSlider = new Swiper('.goodtoknow__slider', {
 	observer: true,
 	observeParents: true,
-	slidesPerView: 2,
-	spaceBetween: 30,
+	slidesPerView: 1,
+	spaceBetween: 0,
 	speed: 800,
 	loop: true,
 	pagination: {
 		el: '.goodtoknow__dotts',
 		clickable: true,
 	},
-	// breakpoints: {
-	// 	320: {
-	// 		slidesPerView: 1,
-	// 		autoHeight: true,
-	// 	},
-	// 	600: {
-	// 		slidesPerView: 2,
-	// 	},
-	// },
+	breakpoints: {
+		800: {
+			slidesPerView: 2,
+			spaceBetween: 30,
+		},
+	},
 });
 
 //========================================================================================================================================================

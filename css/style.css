@@ -2766,8 +2766,8 @@ body.ie ._ibg img {
 .slide-goodtoknow__link {
   position: absolute;
   z-index: 3;
-  bottom: 11%;
-  left: 53%;
+  bottom: 23%;
+  right: -50%;
   display: block;
 }
 
@@ -3429,6 +3429,10 @@ body.ie ._ibg img {
         -ms-flex: 0 1 50%;
             flex: 0 1 50%;
   }
+
+  .goodtoknow__description {
+    max-height: 200px;
+  }
 }
 
 @media (max-width: 600px) {
@@ -3528,6 +3532,18 @@ body.ie ._ibg img {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
+  }
+}
+
+@media (max-width: 460px) {
+  .slide-goodtoknow__link {
+    bottom: auto;
+    right: auto;
+    top: -100%;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0px);
+        -ms-transform: translate(-50%, 0px);
+            transform: translate(-50%, 0px);
   }
 }
 
