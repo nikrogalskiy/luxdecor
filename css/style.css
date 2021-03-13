@@ -1150,9 +1150,9 @@ body.ie ._ibg img {
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
   background-color: #fff;
-  padding: 50px;
+  padding: 30px 40px;
   width: 100%;
-  max-width: 800px;
+  max-width: 440px;
 }
 
 .popup__close {
@@ -1166,21 +1166,312 @@ body.ie ._ibg img {
   background: url("../img/icons/close.svg") center no-repeat;
 }
 
-.popup__body {
-  background-color: #403c3b;
+.popup-callback .popup__close {
+  background: url("../img/popap/close.svg") center no-repeat;
+  top: 36px;
+  right: 40px;
+  width: 23px;
+  height: 23px;
 }
 
-.popup_callback .input {
-  background-color: transparent;
+.popup-callback__title {
+  font-size: 35px;
+  font-weight: 300;
+  color: #010101;
   margin: 0px 0px 30px 0px;
-  border: 1px solid #ffffff;
-  font-size: 14px;
-  color: #fefefe;
-  height: 38px;
+  padding: 0px 25px 0px 0px;
 }
 
-.popup_callback .input._error {
-  border: 1px solid red;
+.form-callback__line {
+  position: relative;
+  margin: 0px 0px 14px 0px;
+}
+
+.form-callback__line::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(0px, -50%);
+      -ms-transform: translate(0px, -50%);
+          transform: translate(0px, -50%);
+}
+
+.form-callback__line input {
+  height: 47px;
+  padding: 0px 10px 0px 45px;
+  border: 1px solid #d1d1d1;
+  font-size: 16px;
+  color: #7c7373;
+}
+
+.form-callback__line input._focus {
+  color: #000;
+  border: 1px solid #fc9a00;
+  background-color: #fdf9e4;
+}
+
+._no-webp .form-callback__line_name::before{
+  background: url("../img/popap/men.png") 0 0 no-repeat; }
+
+.form-callback__line_name::before {
+  width: 22px;
+  height: 17px;
+  left: 12px;
+}
+
+._no-webp .form-callback__line_phone::before{
+  background: url("../img/popap/phone.png") 0 0 no-repeat; }
+
+.form-callback__line_phone::before {
+  width: 22px;
+  height: 20px;
+  left: 12px;
+}
+
+.form-callback__btn {
+  width: 100%;
+  font-size: 15px;
+  font-weight: 400;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin: 20px 0px 27px 0px;
+}
+
+.popup-input .popup__close {
+  background: url("../img/popap/close.svg") center no-repeat;
+  top: 36px;
+  right: 40px;
+  width: 23px;
+  height: 23px;
+}
+
+.popup-input__title {
+  font-size: 35px;
+  font-weight: 300;
+  color: #010101;
+  margin: 0px 0px 30px 0px;
+  padding: 0px 25px 0px 0px;
+}
+
+.popup-input__link {
+  font-size: 15px;
+  font-weight: 500;
+  color: #00b5ab;
+  display: block;
+  text-align: center;
+  margin: 0px 0px 27px 0px;
+}
+
+.popup-input__link_inline {
+  display: inline-block;
+  margin: 0px 0px 0px 0px;
+}
+
+.popup-input__text {
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #7c7373;
+  text-align: center;
+}
+
+.form-popup-input__line {
+  position: relative;
+  margin: 0px 0px 14px 0px;
+}
+
+.form-popup-input__line::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(0px, -50%);
+      -ms-transform: translate(0px, -50%);
+          transform: translate(0px, -50%);
+}
+
+.form-popup-input__line input {
+  height: 47px;
+  padding: 0px 35px 0px 45px;
+  border: 1px solid #d1d1d1;
+  font-size: 16px;
+  color: #7c7373;
+}
+
+.form-popup-input__line input._focus {
+  color: #000;
+  border: 1px solid #fc9a00;
+  background-color: #fdf9e4;
+}
+
+._no-webp .form-popup-input__line_email::before{
+  background: url("../img/popap/email.png") 0 0 no-repeat; }
+
+.form-popup-input__line_email::before {
+  width: 22px;
+  height: 17px;
+  left: 12px;
+}
+
+.form-popup-input__line_pass {
+  position: relative;
+}
+
+._no-webp .form-popup-input__line_pass::before{
+  background: url("../img/popap/password.png") 0 0 no-repeat; }
+
+.form-popup-input__line_pass::before {
+  width: 13px;
+  height: 20px;
+  left: 16px;
+}
+
+.form-popup-input__show {
+  cursor: pointer;
+}
+
+.form-popup-input__show::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  background: url("../img/popap/eye_slash.svg") center no-repeat;
+  right: 10px;
+  top: 50%;
+  -webkit-transform: translate(0px, -50%);
+      -ms-transform: translate(0px, -50%);
+          transform: translate(0px, -50%);
+}
+
+.form-popup-input__show._active::after {
+  background: url("../img/popap/eye.svg") center no-repeat;
+}
+
+.form-popup-input__btn {
+  width: 100%;
+  font-size: 15px;
+  font-weight: 400;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin: 0px 0px 27px 0px;
+}
+
+._no-webp .form-popup-input__btn span::before{
+  background: url("../img/popap/input.png") 0 0 no-repeat; }
+
+.form-popup-input__btn span::before {
+  width: 23px;
+  height: 22px;
+}
+
+.popup-registration .popup__close {
+  background: url("../img/popap/close.svg") center no-repeat;
+  top: 36px;
+  right: 40px;
+  width: 23px;
+  height: 23px;
+}
+
+.popup-registration__title {
+  font-size: 35px;
+  font-weight: 300;
+  color: #010101;
+  margin: 0px 0px 30px 0px;
+  padding: 0px 25px 0px 0px;
+}
+
+.popup-registration__text {
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #7c7373;
+  text-align: center;
+}
+
+.popup-registration__link {
+  font-size: 15px;
+  font-weight: 500;
+  color: #00b5ab;
+}
+
+.form-registration__line {
+  position: relative;
+  margin: 0px 0px 14px 0px;
+}
+
+.form-registration__line::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(0px, -50%);
+      -ms-transform: translate(0px, -50%);
+          transform: translate(0px, -50%);
+}
+
+.form-registration__line input {
+  height: 47px;
+  padding: 0px 10px 0px 45px;
+  border: 1px solid #d1d1d1;
+  font-size: 16px;
+  color: #7c7373;
+}
+
+.form-registration__line input._focus {
+  color: #000;
+  border: 1px solid #fc9a00;
+  background-color: #fdf9e4;
+}
+
+._no-webp .form-registration__line_name::before{
+  background: url("../img/popap/men.png") 0 0 no-repeat; }
+
+.form-registration__line_name::before {
+  width: 14px;
+  height: 18px;
+  left: 12px;
+}
+
+._no-webp .form-registration__line_phone::before{
+  background: url("../img/popap/phone.png") 0 0 no-repeat; }
+
+.form-registration__line_phone::before {
+  width: 22px;
+  height: 20px;
+  left: 12px;
+}
+
+._no-webp .form-registration__line_email::before{
+  background: url("../img/popap/email.png") 0 0 no-repeat; }
+
+.form-registration__line_email::before {
+  width: 22px;
+  height: 17px;
+  left: 12px;
+}
+
+._no-webp .form-registration__line_pass::before{
+  background: url("../img/popap/password.png") 0 0 no-repeat; }
+
+.form-registration__line_pass::before {
+  width: 13px;
+  height: 20px;
+  left: 16px;
+}
+
+.form-registration__btn {
+  width: 100%;
+  font-size: 15px;
+  font-weight: 400;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin: 20px 0px 27px 0px;
+}
+
+._no-webp .form-registration__btn span::before{
+  background: url("../img/popap/input.png") 0 0 no-repeat; }
+
+.form-registration__btn span::before {
+  width: 23px;
+  height: 22px;
 }
 
 .header__container {
@@ -2851,6 +3142,36 @@ body.ie ._ibg img {
     color: #000;
   }
 
+  .popup-input__link:hover {
+    text-decoration: underline;
+  }
+
+  .form-popup-input__btn.btn:hover span {
+    color: #fc9a00;
+  }
+
+  ._no-webp .form-popup-input__btn.btn:hover span::before{
+    background: url("../img/icons/input.png") 0 0 no-repeat; }
+
+  .form-popup-input__btn.btn:hover span::before {
+    content: "";
+  }
+
+  .popup-registration__link:hover {
+    text-decoration: underline;
+  }
+
+  .form-registration__btn.btn:hover span {
+    color: #fc9a00;
+  }
+
+  ._no-webp .form-registration__btn.btn:hover span::before{
+    background: url("../img/icons/input.png") 0 0 no-repeat; }
+
+  .form-registration__btn.btn:hover span::before {
+    content: "";
+  }
+
   .top-header__imput:hover {
     text-decoration: underline;
   }
@@ -3547,11 +3868,49 @@ body.ie ._ibg img {
   }
 }
 
+@media (max-width: 440px) {
+  .popup__body {
+    padding: 30px 10px;
+  }
+
+  .popup-callback .popup__close {
+    right: 10px;
+  }
+
+  .popup-input .popup__close {
+    right: 10px;
+  }
+
+  .popup-registration .popup__close {
+    right: 10px;
+  }
+}
+
 ._webp .btn span::before{ background: url(../img/icons/basket.webp) 0 0/cover no-repeat; }
 
 ._webp .arrows-slider::after{ background: url(../img/icons/arrow_h.webp) 0 0 no-repeat; }
 
 ._webp .article__compare_icon::before{ background: url(../img/icons/libra.webp) 0 0 no-repeat; }
+
+._webp .form-callback__line_name::before{ background: url(../img/popap/men.webp) 0 0 no-repeat; }
+
+._webp .form-callback__line_phone::before{ background: url(../img/popap/phone.webp) 0 0 no-repeat; }
+
+._webp .form-popup-input__line_email::before{ background: url(../img/popap/email.webp) 0 0 no-repeat; }
+
+._webp .form-popup-input__line_pass::before{ background: url(../img/popap/password.webp) 0 0 no-repeat; }
+
+._webp .form-popup-input__btn span::before{ background: url(../img/popap/input.webp) 0 0 no-repeat; }
+
+._webp .form-registration__line_name::before{ background: url(../img/popap/men.webp) 0 0 no-repeat; }
+
+._webp .form-registration__line_phone::before{ background: url(../img/popap/phone.webp) 0 0 no-repeat; }
+
+._webp .form-registration__line_email::before{ background: url(../img/popap/email.webp) 0 0 no-repeat; }
+
+._webp .form-registration__line_pass::before{ background: url(../img/popap/password.webp) 0 0 no-repeat; }
+
+._webp .form-registration__btn span::before{ background: url(../img/popap/input.webp) 0 0 no-repeat; }
 
 ._webp .top-header__imput{ background: url(../img/icons/input.webp) 0 0 no-repeat; }
 
@@ -3583,6 +3942,16 @@ body.ie ._ibg img {
 @media (min-width: 991.98px){
 
   ._webp .arrows-slider.swiper-button-disabled:hover::after{ background: url(../img/icons/arrow_h.webp) 0 0 no-repeat; }
+}
+
+@media (min-width: 991.98px){
+
+  ._webp .form-popup-input__btn.btn:hover span::before{ background: url(../img/icons/input.webp) 0 0 no-repeat; }
+}
+
+@media (min-width: 991.98px){
+
+  ._webp .form-registration__btn.btn:hover span::before{ background: url(../img/icons/input.webp) 0 0 no-repeat; }
 }
 
 @media (min-width: 992px){
